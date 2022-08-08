@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mm : MonoBehaviour
+public class WheelController : MonoBehaviour
 {
     GameObject car;
     GameObject[] wheel = new GameObject[4];
@@ -10,23 +10,23 @@ public class mm : MonoBehaviour
     GameObject ParentFrontRightWheel;
     Vector3 Distance;
 
-    public float x;
+    float x;
 
-    public float speedToAhead;
+    float speedToAhead;
     float accelerateAhead;
     float maxAheadSpeed;
 
     float autoAccelerateStopping;
     float carBrakes;
 
-    public float speedToBack;
+    float speedToBack;
     float accelerateBack;
     float maxBackSpeed;
 
-    public float speedOfRotation;
+    float speedOfRotation;
 
     float maxTurnWheels;
-    public float currentTurnWheels;
+    float currentTurnWheels;
     Vector3 angles;
 
     private void Awake()
